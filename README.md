@@ -1,103 +1,48 @@
-![FalconStats](/img/falconStats.png?raw=true)
 
-# FalconStats
+[Source](http://www.nde-ed.org/EducationResources/CommunityCollege/EddyCurrents/Introduction/IntroductiontoET.php "Permalink to Basic Principles of ET")
 
-[Original reddit post](https://www.reddit.com/r/unixporn/comments/8gwcti/motd_ubuntu_server_1804_lts_my_motd_scripts_for/) on [/r/unixporn](https://www.reddit.com/r/unixporn) by [@hermannbjorgvin](https://github.com/hermannbjorgvin/)
+# Basic Principles of ET
 
-![Notification](https://i.imgur.com/XMSekjG.png)
+**Basic Principles of Eddy Current Inspection**
 
-## Requires
+Eddy current inspection is one of several NDT methods that use the principal of electromagnetism as the basis for conducting examinations. Several other methods such as Remote Field Testing (RFT), Flux Leakage and Barkhausen Noise also use this principle.  
 
-- Linux
-- nodejs and nodejs package manager (npm)
+Eddy currents are created through a process called electromagnetic induction. When alternating current is applied to the conductor, such as copper wire, a magnetic field develops in and around the conductor. This magnetic field expands as the alternating current rises to maximum and collapses as the current is reduced to zero. If another electrical conductor is brought into the close proximity to this changing magnetic field, current will be induced in this second conductor. Eddy currents are induced electrical currents that flow in a circular path. They get their name from eddies that are formed when a liquid or gas flows in a circular path around obstacles when conditions are right.  
 
-## Install
+[![Eddy Current Inspection](https://res.cloudinary.com/marcomontalbano/image/upload/v1584249763/video_to_markdown/images/youtube--YbCEZ52buFQ-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/YbCEZ52buFQ "Eddy Current Inspection")
 
-1. Clone into some Folder
+One of the major advantages of eddy current as an NDT tool is the variety of inspections and measurements that can be performed. In the proper circumstances, eddy currents can be used for:
 
-  ```sh
-  git clone https://github.com/Heholord/FalconStats
-  ```
+* Crack detection
+* Material thickness measurements
+* Coating thickness measurements
+* Conductivity measurements for: 
+    * Material identification
+    * Heat damage detection
+    * Case depth determination
+    * Heat treatment monitoring
 
-2. Enter Folder
+Some of the advantages of eddy current inspection include: 
 
-```sh
-cd FalconStats
-```
+* Sensitive to small cracks and other defects
+* Detects surface and near surface defects
+* Inspection gives immediate results
+* Equipment is very portable
+* Method can be used for much more than flaw detection
+* Minimum part preparation is required
+* Test probe does not need to contact the part
+* Inspects complex shapes and sizes of conductive materials  
 
-1. Install Globally to get the Binaries avaiable
+Some of the limitations of eddy current inspection include:
 
-```sh
-npm install -g
-```
+* Only conductive materials can be inspected 
+* Surface must be accessible to the probe
+* Skill and training required is more extensive than other techniques
+* Surface finish and and roughness may interfere
+* Reference standards needed for setup
+* Depth of penetration is limited
+* Flaws such as delaminations that lie parallel to the probe coil winding and probe scan direction are undetectable
 
-1. SymLink into the `/etc/update-motd` folder in Ubuntu ([see](https://wiki.ubuntu.com/UpdateMotd)).
+[1]: http://www.nde-ed.org/Graphics/Flash/WheelMovie.html
 
-```sh
-ln -s falcon-motd /etc/update-motd/falconstats
-```
-
-1. Run the Auto-Configuration
-
-![Interactive Configuration](https://i.imgur.com/3yulvHB.png)
-
-For interactive configuration run
-
-```bash
-node init.js
-```
-
-You can always view or edit your config in [scripts/config.json](config.json)
-
-## Testrun your motd
-
-```sh
-falcon-motd
-```
-
-## Run scripts
-
-You can run all scripts configured in the scripts/config.json using
-
-```bash
-node start.js
-```
-
-If you want to run them individually, have a look here:
-
-For nodejs files (*.js):
-
-```bash
-node scripts/[script].js
-```
-
-For shell scripts files (*.sh):
-
-```bash
-bash scripts/[script].sh
-# or
-sh scripts/[script].sh
-# or
-cd scripts
-./[script].sh
-```
-
-## Future wishes and pull request offers
-
-If you send me a pull request I offer you to name your github repo next to the feature you have implemented
-
-- [x] adaptable config for all scripts
-- [ ] implement service.js for many services
-- [x] write a startup scripts which includes the other scripts - thanks to [DSigmund](https://github.com/DSigmund)
-- [x] [interactive program would be helpful for user configuration](https://github.com/Heholord/FalconStats/commit/ba290d6414ca126abee7c5efa8af6c4103c3104b)
-- [ ] implement [reddit openssl comment](https://www.reddit.com/r/unixporn/comments/8gwcti/motd_ubuntu_server_1804_lts_my_motd_scripts_for/dyfbi0k/)
-- [x] make a logo for this project - by [J-tt](https://github.com/J-tt)
-- [ ] feel free to add features
-
-# We are better together
-
-- First pull request by [TechnologyClassroom](https://github.com/TechnologyClassroom)
-- thank you [stevesbrain](https://github.com/stevesbrain) for checking our dependency list. This can be a pain in the a** sometimes
-- Thank you [MrPowerMac](https://github.com/MrPowerMac) for suggesting this project a licence. Now we are truly open source.
-- [J-tt](https://github.com/J-tt) added a logo to our project 🎉
-- Thank you [DSigmund](https://github.com/DSigmund) for your startup script. It is very helpful!
+  
